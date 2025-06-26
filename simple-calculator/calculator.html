@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/calculator.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <!-- wrap the calculator in a container -->
+ <div class="container">
+  <div class="row">
+  <div class="col-12 calculator-body">
+  <p class="js-display-result result">0</p>
+  <p>
+    <button onclick="
+      updateCalculator('7')
+      ">7</button>
+    <button onclick="
+      updateCalculator('8')
+      ">8</button>
+    <button onclick="
+      updateCalculator('9')
+      ">9</button>
+    <button onclick="
+      updateCalculator(' + ')
+      "
+      class="btn-primary"
+      >+</button>
+  </p>
+  <p>
+    <button onclick="
+      updateCalculator('4')
+      ">4</button>
+    <button onclick="
+      updateCalculator('5')
+      ">5</button>
+    <button onclick="
+      updateCalculator('6')
+      ">6</button>
+    <button onclick="
+      updateCalculator(' - ')
+      " 
+      class="btn-primary"
+      >-</button>
+  </p>
+  <p>
+    <button onclick="
+      updateCalculator('1')
+      ">1</button>
+    <button onclick="
+      updateCalculator('2')
+      ">2</button>
+    <button onclick="
+      updateCalculator('3')
+      ">3</button>
+    <button onclick="
+      updateCalculator(' * ')
+      "
+       class="btn-primary"
+      >*</button>
+  </p>
+  <p>
+    <button onclick="
+      updateCalculator('0')
+      ">0</button>
+    <button onclick="
+      updateCalculator(' . ')
+      ">.</button>
+    <button onclick="
+      updateCalculator(' = ' )
+      ">=</button>
+    <button onclick="
+      updateCalculator(' / ')
+      "
+       class="btn-primary"
+      >/</button>
+  </p>
+
+  <button
+    onclick="updateCalculator('clear')"
+     class="btn-primary"
+  >Clear</button>
+    </div>
+  </div>
+ </div>
+
+  <script src="scripts/bootstrap.bundle.min.js"></script>
+  <script src="scripts/calculator.js"></script>
+</body>
+</html>
